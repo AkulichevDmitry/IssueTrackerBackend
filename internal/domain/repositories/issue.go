@@ -5,10 +5,10 @@ import (
 )
 
 type IssueRepository interface {
-	GetByID(id entities.IssueID) (*entities.IssueEntity, error)
-	GetByProductID(productID entities.ProductID) ([]*entities.IssueEntity, error)
-	GetByCompanyID(companyID entities.CompanyID) ([]*entities.IssueEntity, error)
-	Create(issue *entities.IssueEntity) error
-	Update(issue *entities.IssueEntity) error
+	GetByID(id entities.IssueID) (*entities.Issue, error)
+	GetByProductID(productID entities.ProductID) ([]*entities.Issue, error)
+	GetByCompanyID(companyID entities.CompanyID) ([]*entities.Issue, error)
+	Create(issue *entities.Issue) error
+	Update(issue *entities.Issue) error
 	Delete(id entities.IssueID) error
 }

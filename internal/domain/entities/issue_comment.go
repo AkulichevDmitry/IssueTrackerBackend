@@ -6,7 +6,7 @@ import (
 
 type IssueCommentID int64
 
-type IssueCommentEntity struct {
+type IssueComment struct {
 	ID        IssueCommentID
 	IssueID   IssueID
 	UserID    UserID

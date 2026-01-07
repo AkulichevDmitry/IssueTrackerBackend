@@ -6,7 +6,8 @@ import (
 
 type CompanyID int64
 type CompanyName string
-type CompanyEntity struct {
+
+type Company struct {
 	ID        CompanyID
 	Name      CompanyName
 	CreatedAt time.Time

@@ -5,8 +5,8 @@ import (
 )
 
 type CompanyRepository interface {
-	GetByID(id entities.CompanyID) (*entities.CompanyEntity, error)
-	Create(company *entities.CompanyEntity) error
-	Update(company *entities.CompanyEntity) error
+	GetByID(id entities.CompanyID) (*entities.Company, error)
+	Create(company *entities.Company) error
+	Update(company *entities.Company) error
 	Delete(id entities.CompanyID) error
 }

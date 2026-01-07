@@ -6,7 +6,7 @@ import (
 
 type IssueID int64
 
-type IssueEntity struct {
+type Issue struct {
 	ID          IssueID
 	ProductID   ProductID
 	Title       string

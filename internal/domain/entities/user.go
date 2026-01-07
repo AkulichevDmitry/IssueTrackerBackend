@@ -7,7 +7,7 @@ import (
 type UserID int64
 type UserEmail string
 
-type UserEntity struct {
+type User struct {
 	ID        UserID
 	CompanyID CompanyID
 	Username  string
