@@ -1,12 +1,12 @@
 package repositories
 
 import (
-	"issue_tracker/internal/domain/entities"
+	"issue_tracker/internal/domain/entities/company"
 )
 
 type CompanyRepository interface {
-	GetByID(id entities.CompanyID) (*entities.Company, error)
-	Create(company *entities.Company) error
-	Update(company *entities.Company) error
-	Delete(id entities.CompanyID) error
+	GetByID(id company.ID) (*company.Company, error)
+	Create(company *company.Company) error
+	Update(company *company.Company) error
+	Delete(id company.ID) error
 }
