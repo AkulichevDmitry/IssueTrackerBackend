@@ -1,17 +1,17 @@
-package entities
+package user
 
 import (
 	"issue_tracker/internal/domain/entities/company"
 )
 
-type UserID int64
-type UserEmail string
+type ID int64
+type Email string
 
 type User struct {
-	ID        UserID
+	ID        ID
 	CompanyID company.ID
 	Username  string
-	Email     UserEmail
+	Email     Email
 	Password  string
 	Rating    int64
 	IsCompany bool

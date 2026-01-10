@@ -1,5 +1,7 @@
 package entities
 
+import "issue_tracker/internal/domain/entities/user"
+
 type IssueID int64
 
 type Issue struct {
@@ -7,6 +9,6 @@ type Issue struct {
 	ProductID   ProductID
 	Title       string
 	Description string
-	UserID      UserID
+	UserID      user.ID
 	Solved      bool
 }
