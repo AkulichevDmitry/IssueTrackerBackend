@@ -4,9 +4,6 @@ import (
 	"issue_tracker/internal/domain/entities/company"
 )
 
-type ID int64
-type Email string
-
 type User struct {
 	ID        ID
 	CompanyID company.ID
