@@ -1,7 +1,7 @@
 package entities
 
 import (
-	"time"
+	"issue_tracker/internal/domain/entities/company"
 )
 
 type UserID int64
@@ -9,7 +9,7 @@ type UserEmail string
 
 type User struct {
 	ID        UserID
-	CompanyID CompanyID
+	CompanyID company.ID
 	Username  string
 	Email     UserEmail
 	Password  string
@@ -17,5 +17,4 @@ type User struct {
 	IsCompany bool
 	IsBanned  bool
 	Avatar    string
-	CreatedAt time.Time
 }

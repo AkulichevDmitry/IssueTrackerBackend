@@ -1,9 +1,5 @@
 package entities
 
-import (
-	"time"
-)
-
 type IssueID int64
 
 type Issue struct {
@@ -13,5 +9,4 @@ type Issue struct {
 	Description string
 	UserID      UserID
 	Solved      bool
-	CreatedAt   time.Time
 }
