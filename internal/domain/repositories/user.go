@@ -1,12 +1,12 @@
 package repositories
 
 import (
-	"issue_tracker/internal/domain/entities"
+	"issue_tracker/internal/domain/entities/user"
 )
 
 type UserRepository interface {
-	GetByID(id entities.UserID) (*entities.User, error)
-	Create(user *entities.User) error
-	Update(user *entities.User) error
-	Delete(id entities.UserID) error
+	GetByID(id user.ID) (*user.User, error)
+	Create(user user.User) error
+	Update(user user.User) error
+	Delete(id user.ID) error
 }
