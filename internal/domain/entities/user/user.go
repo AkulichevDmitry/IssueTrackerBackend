@@ -7,11 +7,11 @@ import (
 type User struct {
 	ID        ID
 	CompanyID company.ID
-	Username  string
+	Username  Username
 	Email     Email
-	Password  string
-	Rating    int64
+	Password  Password
+	Rating    Rating
 	IsCompany bool
 	IsBanned  bool
-	Avatar    string
+	Avatar    Avatar
 }
